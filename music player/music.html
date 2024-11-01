@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Therapeutic Music Player</title>
+    <link rel="stylesheet" href="music.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Therapeutic Music Player</h1>
+        <p>Select your therapy music and enjoy the relaxation</p>
+      </header>
+
+      <section class="music-grid">
+        <!-- Music Cards -->
+        <div class="music-card">
+          <img
+            src="./images/relaxing.jpeg"
+            alt="Relaxation"
+            class="music-image"
+          />
+          <div class="music-info">
+            <h3>Relaxation Music</h3>
+            <button class="play-btn" data-track="./tracks/relaxing.mp3">
+              Play
+            </button>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <img
+            src="./images/mindful.jpeg"
+            alt="Mindfulness"
+            class="music-image"
+          />
+          <div class="music-info">
+            <h3>Mindfulness Meditation</h3>
+            <button class="play-btn" data-track="tracks/mindfullness.mp3">
+              Play
+            </button>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <img
+            src="./images/sleep.jpeg"
+            alt="Sleep Therapy"
+            class="music-image"
+          />
+          <div class="music-info">
+            <h3>Sleep Therapy</h3>
+            <button class="play-btn" data-track="tracks/sleepp.mp3">
+              Play
+            </button>
+          </div>
+        </div>
+
+        <div class="music-card">
+          <img
+            src="./images/stress.jpeg"
+            alt="Stress Relief"
+            class="music-image"
+          />
+          <div class="music-info">
+            <h3>Stress Relief</h3>
+            <button class="play-btn" data-track="tracks/stress.mp3">
+              Play
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="player-controls">
+        <audio id="audioPlayer" controls></audio>
+      </div>
+    </div>
+
+    <script src="music.js"></script>
+  </body>
+</html>
